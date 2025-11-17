@@ -1,13 +1,1 @@
-# Editor
-.vscode/
-*.log
-
-# Sistema
 .DS_Store
-Thumbs.db
-
-# Dependencias
-node_modules/
-
-# Archivos sensibles
-.env
