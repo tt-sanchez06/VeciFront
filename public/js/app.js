@@ -59,7 +59,7 @@ async function ensureValidAuthOrRedirect(){
 }
 
 // =========================
-//    FORMATOS Y HELPERS
+//    FORMATO Y HELPER
 // =========================
 function formatDate(dt){
   return new Date(dt).toLocaleString();
