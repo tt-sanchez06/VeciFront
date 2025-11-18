@@ -642,7 +642,7 @@ async function loadMisOfertas(target){
     el.className = 'card p-3 mb-2';
     el.innerHTML = `
       <div><strong>Solicitud #${o.id_solicitud}</strong> - ${o.descripcion}</div>
-      <div class='text-secondary small'>Estado oferta: ${o.estado}  Estado solicitud: ${o.estado_solicitud}</div>
+      <div class='text-secondary small'>Estado oferta: ${o.estado} • Estado solicitud: ${o.estado_solicitud}</div>
     `;
     if (o.estado === 'aceptada'){
       if (o.estado_solicitud === 'finalizada') return;
@@ -1155,6 +1155,7 @@ function openEditProfileForm(userData){
     form.scrollIntoView({ behavior:'smooth', block:'start' });
   }
 }
+
 
 
 
