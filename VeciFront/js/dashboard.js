@@ -893,11 +893,7 @@ if (socket){
 } else {
   console.warn('No se pudo inicializar Socket.io; las notificaciones en tiempo real estarán deshabilitadas.');
 }
-const msg = nodes.find(node => node.dataset && String(node.dataset.id) === String(info.id));
-  if (!msg) return;
-  const chk = msg.querySelector('.msg-check');
-  if (chk) chk.classList.add('read');
-});
+
 loadPerfil();
 
 // Helpers UI mejorados
@@ -1159,5 +1155,6 @@ function openEditProfileForm(userData){
     form.scrollIntoView({ behavior:'smooth', block:'start' });
   }
 }
+
 
 
